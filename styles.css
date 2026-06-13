@@ -120,7 +120,9 @@ h2 { margin-bottom: 14px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.3
 .service-card::before { content: ""; position: absolute; right: 0; bottom: 0; width: 0; height: 4px; background: var(--teal); transition: .3s; }
 .service-card:hover { transform: translateY(-7px); border-color: #9edbd1; box-shadow: var(--shadow); }
 .service-card:hover::before { width: 100%; }
-.service-icon { width: 58px; height: 58px; display: grid; place-items: center; margin-bottom: 20px; color: var(--teal); background: var(--mint); border-radius: 15px; font-size: 1.8rem; font-weight: 800; }
+.service-icon { width: 64px; height: 64px; display: grid; place-items: center; margin-bottom: 20px; color: var(--teal); background: var(--mint); border: 1px solid #d4eee9; border-radius: 17px; transition: .3s; }
+.service-icon svg { width: 35px; height: 35px; fill: none; stroke: currentColor; stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round; }
+.service-card:hover .service-icon { color: #fff; background: var(--teal); border-color: var(--teal); transform: rotate(-3deg) scale(1.05); }
 .service-card h3 { margin-bottom: 9px; font-size: 1.05rem; }
 .service-card p { margin-bottom: 18px; color: var(--muted); font-size: .83rem; }
 .card-link, .text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--teal-dark); font-size: .82rem; font-weight: 800; }
